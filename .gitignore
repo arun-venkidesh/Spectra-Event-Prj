@@ -1,3 +1,6 @@
 db.sqlite3
-pychache
 spectravenv
+spectraeventprj/__pychache__
+spectraeventapp/__pychache__
+
+
