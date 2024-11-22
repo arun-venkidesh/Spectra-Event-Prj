@@ -1,0 +1,232 @@
+/* navigation bar start */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url('static/images/newbgimg.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+/* #all::before{
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+} */
+.navbar{
+    background-color: #fff;
+    height: 80px;
+}
+.navbar-brand{
+    font-weight: 500;
+    color: #009970;
+    transition: 0.3s color;
+}
+.btn-custom{
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.btn-custom:hover{
+    background-color: #00b383;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link, .nav-link.active{
+    color:#000;
+
+}
+@media(min-width: 991px){
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before{
+    width: 100%;
+    visibility: visible;
+}
+}
+ /* first Wedding Section start */
+
+/* .wedding-section {
+    text-align: right;
+} */
+
+.body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.imageone {
+     flex: 1; 
+     min-width: 300px;
+     height: 250px;
+    max-width: 100%;
+    border-radius: 15px;
+    align-items: flex-start;
+}
+
+.ringsection{
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    text-align: left;
+    margin-left: 20px;
+    justify-content: right;
+}
+
+.imagering{
+    max-width: 50px;
+}
+#headingone {
+    font-size: 2.5em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#paraone {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.buttonone {
+    background-color: #FF7F50;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+} 
+
+.buttonone:hover{
+    background-color: #FF6A33
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .ringsection {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .buttonone {
+        width: 100%;
+    }
+}
+
+
+.imageone {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid lightgreen pa;
+}
+
+#headingone {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#paraone {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.buttonone {
+    background-color: #ff6f61;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+} 
+.allparas{
+    text-align: right;
+} */
+/* first wedding section end */
+
+/* carousal image start */
+
+.carousel-inner img{
+    width: 100%;
+    height: 500px;
+}
+/* carousal image end */
+
+/* Third section start */
+.about-section {
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+.about-section h6 {
+    color: #f28b82;
+    font-weight: bold;
+}
+
+.about-section h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: #777;
+    max-width: 400px;
+    margin-bottom: 1.5rem;
+}
+
+.about-section .btn-outline-primary {
+    color: #7dbeaa;
+    border-color: #7dbeaa;
+}
+
+.about-section .btn-outline-primary:hover {
+    background-color: #7dbeaa;
+    color: #fff;
+}
+/* Third section end */

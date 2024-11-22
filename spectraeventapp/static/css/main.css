@@ -1,0 +1,300 @@
+/* navigation bar start */
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://cdn.pixabay.com/photo/2020/02/20/17/57/flower-4865379_1280.png') no-repeat center  fixed ;
+    opacity: 1;
+    background-size: cover;
+    color: #333;
+    
+}
+
+.navbar {
+    /* position: fixed;
+    float: right;
+    width: 70%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f28b82;
+}
+
+.nav-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.nav-links .dropdown-menu li {
+    margin: 5px 0;
+}
+
+.nav-links .dropdown-menu a {
+    padding: 5px;
+}
+
+.nav-links li:hover .dropdown-menu {
+    display: block;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        width: 100%;
+        display: block;
+    }
+
+    #menu-toggle:checked + .nav-links {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* .content {
+    padding: 20px;
+} */
+        /* navigationbar end */
+
+
+ /* first Wedding Section start */
+
+/* .wedding-section {
+    text-align: right;
+} */
+.body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.imageone {
+     flex: 1; 
+     min-width: 300px; 
+    max-width: 100%;
+    border-radius: 15px;
+    align-items: flex-start;
+}
+
+.ringsection{
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    text-align: left;
+    margin-left: 20px;
+    justify-content: right;
+}
+
+.imagering{
+    max-width: 50px;
+}
+#headingone {
+    font-size: 2.5em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#paraone {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.buttonone {
+    background-color: #FF7F50;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+} 
+
+.buttonone:hover{
+    background-color: #FF6A33
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .ringsection {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .buttonone {
+        width: 100%;
+    }
+}
+
+
+/* .allparas{
+    text-align: right;
+} */ 
+
+
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.content-section {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.content-section .logo img {
+    max-width: 50px;
+}
+
+.content-title {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.content-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+.reservation-button {
+    background-color: #FF7F50;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reservation-button:hover {
+    background-color: #FF6A33;
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .content-section {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .reservation-button {
+        width: 100%;
+    }
+} */
+/* first wedding section end */

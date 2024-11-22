@@ -1,0 +1,46 @@
+/* event booking form start */
+.all{
+    font-family: Arial, sans-serif;
+    background-color: rgb(117, 215, 237);
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,39,141,1) 0%, rgba(9,9,121,1) 8%, rgba(81,76,126,1) 30%, rgba(173,155,176,1) 54%, rgba(192,138,227,1) 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.newform{
+    background: rgb(4, 224, 224);
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+input{
+    width: 100%;
+    padding: 2px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.btn{
+    background-color: whitesmoke;
+    color: rgb(68, 155, 218);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 100px;
+}
+.btn:hover{
+    background-color: rgb(213, 225, 89);
+}
+.newheading{
+    text-align: center;
+}
+/* event bookig form end */
+

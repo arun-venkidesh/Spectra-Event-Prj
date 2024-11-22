@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>login</title>
+    <link rel="stylesheet" href="{% static "css/login.css" %}">
+</head>
+<body>
+    <form method="POST" class="loginform">
+        {% csrf_token %}
+        <h2 id="loginheading">Login</h2>
+        <label for="Email">Email</label>
+        <input type="text" id="Email" placeholder="example@gmail.com" name="Email" required>
+        <br>
+
+        <label for="Password">Password</label>
+        <input type="password" id="Pass" name="Password" required class="form-control" data-toggle="password">
+        <br>
+
+        <button type="button" class="btn btn-warning">Login</button>
+        {% if error %}
+          <p> {{error}} </p>
+        {% endif %}
+    </form>
+</body>
+</html>

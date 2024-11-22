@@ -1,0 +1,64 @@
+/* About Section one start */
+
+.about-section {
+    height: 100vh;
+    background-color: #dffffa; 
+    /* background-color: #92FFDB; */
+    background-image: url('images/christtwo.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+}
+
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.about-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* .breadcrumb {
+    font-size: 0.9rem;
+    color: #888;
+    
+}
+
+.breadcrumb-active {
+    color: #e79b9b;
+    border: 1px solid #8dc5c5 ;
+    border-radius: 5px;
+} */
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .about-description {
+        font-size: 0.8rem;
+    }
+}
+
+/* .allicons{
+    display: flex;
+     float: left; 
+    justify-content: center;
+    align-items: center;
+} */
+/* About section one end  */

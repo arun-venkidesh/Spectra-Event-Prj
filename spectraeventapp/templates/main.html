@@ -1,0 +1,107 @@
+{% extends "master.html" %}
+{% load static %}
+
+
+{% block title %} Spectra Event| Where Moments illuminate {% endblock %}
+    
+
+
+{% block content %}
+<!-- content first start -->
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 imageone">
+                 <!-- <img src="{% static "images/people-2565128.jpg" %}" alt="Wedding Couple" class="img-fluid rounded" width="475" height="540">  -->
+                <img src="{% static "images/newphoto.jpg" %}" class="float-start img-thumbnail" alt="wedding couple">
+            </div>
+            <div class="col-md-6 text-section ringsection">
+                <div class="logo mb-4">
+                    <img src="{% static "images/gold-3410037.png" %}" alt="Rings Logo" class="img-fluid imagering">
+                    <h1 class="display-4" id="headingone">Perfect Weddings Made Easy!</h1>
+                <p class="lead" id="paraone">Join our event!</p>
+                <a href="{% url 'booking' %}" class="btn btn-primary btn-lg buttonone">Book Now! </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+<!-- content first end -->
+
+<!-- content second start -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static "images/carousalimg3.jpg" %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+              <img src="{% static "images/carousalimg2.jpg" %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+              <img src="{% static "images/carousalimg1.jpg" %}" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        {% comment %} <img src="{% static 'images/newbgimg.png' %}" alt=""> {% endcomment %}
+<!-- content second end -->
+       
+<!-- Third section strat -->
+<section class="about-section py-5">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-md-6">
+              <h6 class="text-muted">About Spectra</h6>
+              <h1 class="display-5 fw-bold">What We do, We do With Passion</h1>
+              <p class="text-muted">Spectra Event Management is a premier event planning and coordination company, renowned for its innovative approach, meticulous attention to detail, and commitment to excellence. Whether it’s a corporate gathering, wedding, festival, or private celebration, Spectra Event transforms every occasion into a memorable experience that exceeds expectations.</p>
+              <a href="{% url 'about' %}" class="btn btn-outline-primary rounded-pill">Learn More</a>
+          </div>
+          <div class="col-md-6 d-flex flex-wrap justify-content-center">
+              <div class="image-group">
+                  <img src="{% static 'images/haldiimgone.jpg' %}" alt="better together" class="rounded img-top" width="150" height="150">
+                  <img src="https://via.placeholder.com/150x150" alt="bouquet" class="rounded img-center">
+                  <img src="https://via.placeholder.com/150x150" alt="glasses" class="rounded img-bottom">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- fourth section start -->
+        <section>
+          <div class="event-promo-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="event-images">
+                            <img src="{% static '' %}" class="main-image" alt="Event main image">
+                            <div class="small-images">
+                                <img src="{% static '' %}" class="small-image" alt="Small event image 1">
+                                <img src="{% static '' %}" class="small-image" alt="Small event image 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="event-title">Host Your In-Person Events Now</h2>
+                        <p class="event-description">
+                            Whether you need event registration, badge printing, check-in tech, or mobile event app, our in-person event platform offers end-to-end services & tools to simplify the event management process.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+      </section>
+<!-- fourth section end -->
+{% endblock %}

@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Event Booking</title>
+    <link rel="stylesheet" href="{% static 'css/booking.css' %}">
+</head>
+<body>
+    <div class="all">
+        <form method="POST" class="newform">
+            <h3 class="newheading"> Book Your Service </h3>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn">Order Services</button>      
+        </form>
+    </div>
+</body>
+</html>
